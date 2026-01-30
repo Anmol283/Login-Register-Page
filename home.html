@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <!-- FORM -->
+  <form id="employeeForm" class="card">
+    <div class="row">
+      <div>
+        <label>Full Name</label>
+        <input type="text" required />
+      </div>
+
+      <div>
+        <label>Email</label>
+        <input type="email" required />
+      </div>
+
+      <div>
+        <label>Mobile No.</label>
+        <input type="number" required />
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <label>Salary</label>
+        <input type="number" required />
+      </div>
+
+      <div>
+        <label>Department</label>
+        <select required>
+          <option value="">Department</option>
+          <option value="HR">HR</option>
+          <option value="Tech">Tech</option>
+          <option value="Finance">Finance</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Performance Rating</label>
+        <select required>
+          <option value="">Performance Rating</option>
+          <option value="Good">Good</option>
+          <option value="Average">Average</option>
+          <option value="Excellent">Excellent</option>
+        </select>
+      </div>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- TABLE -->
+  <div class="card">
+    <div class="controls">
+  <!-- Filter By -->
+  <label for="filter">Filter By:</label>
+  <select id="filter-department">
+    <option value="">Department</option>
+    <option value="HR">HR</option>
+    <option value="IT">IT</option>
+    <option value="Finance">Finance</option>
+  </select>
+
+  <select id="filter-performance">
+    <option value="">Performance</option>
+    <option value="Excellent">Excellent</option>
+    <option value="Good">Good</option>
+    <option value="Average">Average</option>
+    <option value="Poor">Poor</option>
+  </select>
+
+  <!-- Sort By -->
+  <label for="sort">Sort By:</label>
+  <select id="sort">
+    <option value="">Select</option>
+    <option value="salary-asc">Salary Low to High</option>
+    <option value="salary-desc">Salary High to Low</option>
+    <option value="performance-asc">Performance Low to High</option>
+    <option value="performance-desc">Performance High to Low</option>
+    <option value="asc">Ascending</option>
+    <option value="desc">Descending</option>
+  </select>
+</div>
+
+
+      <button type="button">Reset</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>EMP_NO</th>
+          <th>EMP_NAME</th>
+          <th>EMP_EMAIL</th>
+          <th>DEPARTMENT</th>
+          <th>VIEW_MORE</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <script src="home.js"></script>
+</body>
+</html>

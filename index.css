@@ -1,0 +1,46 @@
+body{
+  background-color: #f4cdc6;
+  
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 25vh;
+}
+form > button{
+  padding: 10px;
+  background-color: #f8834c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form > input{
+  font-size: large;
+}
+form > button:hover{
+  background-color: #e6733b;
+}
+form > p{
+  padding: 2px;
+  margin: 0px;
+  font-size: 14px;
+  text-align: right;
+}
+form > p > a{
+  text-decoration: none;
+  color: #f8834c;
+}
+
+
+@media (max-width: 480px) {
+  form{
+    width: 90%;
+  }
+}
