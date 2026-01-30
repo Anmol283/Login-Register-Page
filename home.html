@@ -46,10 +46,10 @@
       <div>
         <label>Performance Rating</label>
         <select required>
-          <option value="">Performance Rating</option>
+          <option value="">Performance</option>
+          <option value="Excellent">Excellent</option>
           <option value="Good">Good</option>
           <option value="Average">Average</option>
-          <option value="Excellent">Excellent</option>
         </select>
       </div>
     </div>
@@ -57,41 +57,37 @@
     <button type="submit">Submit</button>
   </form>
 
-  <!-- TABLE -->
+  <!-- TABLE CONTROLS -->
   <div class="card">
     <div class="controls">
-  <!-- Filter By -->
-  <label for="filter">Filter By:</label>
-  <select id="filter-department">
-    <option value="">Department</option>
-    <option value="HR">HR</option>
-    <option value="IT">IT</option>
-    <option value="Finance">Finance</option>
-  </select>
 
-  <select id="filter-performance">
-    <option value="">Performance</option>
-    <option value="Excellent">Excellent</option>
-    <option value="Good">Good</option>
-    <option value="Average">Average</option>
-    <option value="Poor">Poor</option>
-  </select>
+      <label>Filter By:</label>
 
-  <!-- Sort By -->
-  <label for="sort">Sort By:</label>
-  <select id="sort">
-    <option value="">Select</option>
-    <option value="salary-asc">Salary Low to High</option>
-    <option value="salary-desc">Salary High to Low</option>
-    <option value="performance-asc">Performance Low to High</option>
-    <option value="performance-desc">Performance High to Low</option>
-    <option value="asc">Ascending</option>
-    <option value="desc">Descending</option>
-  </select>
-</div>
+      <select id="filter-department">
+        <option value="">Department</option>
+        <option value="HR">HR</option>
+        <option value="Tech">Tech</option>
+        <option value="Finance">Finance</option>
+      </select>
 
+      <select id="filter-performance">
+        <option value="">Performance</option>
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Average">Average</option>
+      </select>
 
-      <button type="button">Reset</button>
+      <label>Sort By:</label>
+
+      <select id="sort">
+        <option value="">Select</option>
+        <option value="salary-asc">Salary Low to High</option>
+        <option value="salary-desc">Salary High to Low</option>
+        <option value="name-asc">Name A–Z</option>
+        <option value="name-desc">Name Z–A</option>
+      </select>
+
+      <button type="button" id="reset">Reset</button>
     </div>
 
     <table>
